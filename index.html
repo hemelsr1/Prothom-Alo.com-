@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Portal Layout</title>
+
+<style>
+    body{
+        margin:0;
+        font-family: Arial, Helvetica, sans-serif;
+        background:#f5f5f5;
+        color:#111;
+    }
+
+    /* ===== Top Header ===== */
+    .topbar{
+        background:#ffffff;
+        border-bottom:1px solid #ddd;
+        padding:10px 20px;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    .logo{
+        font-size:34px;
+        font-weight:bold;
+    }
+
+    .toplinks{
+        font-size:14px;
+        color:#555;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar{
+        background:#fff;
+        padding:10px 20px;
+        border-bottom:1px solid #ddd;
+        display:flex;
+        gap:20px;
+        flex-wrap:wrap;
+    }
+
+    .navbar a{
+        text-decoration:none;
+        color:#000;
+        font-weight:600;
+    }
+
+    .navbar a:hover{
+        color:#e60000;
+    }
+
+    /* ===== Banner ===== */
+    .banner{
+        margin:15px auto;
+        width:95%;
+        height:120px;
+        background:#d90000;
+        color:white;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        font-size:24px;
+        font-weight:bold;
+    }
+
+    /* ===== Main Layout ===== */
+    .container{
+        width:95%;
+        margin:auto;
+        display:grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        gap:20px;
+    }
+
+    /* ===== Cards ===== */
+    .card{
+        background:#fff;
+        padding:12px;
+        border:1px solid #ddd;
+    }
+
+    .card h3{
+        margin-top:0;
+        font-size:18px;
+    }
+
+    .thumb{
+        width:100%;
+        height:150px;
+        background:#ccc;
+        margin:10px 0;
+    }
+
+    /* ===== Footer ===== */
+    .footer{
+        margin-top:30px;
+        background:#111;
+        color:white;
+        text-align:center;
+        padding:15px;
+    }
+
+    /* ===== Responsive ===== */
+    @media(max-width:900px){
+        .container{
+            grid-template-columns:1fr;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- Header -->
+<div class="topbar">
+    <div class="logo">প্রথম আলো</div>
+    <div class="toplinks">Eng | Login | Search</div>
+</div>
+
+<!-- Menu -->
+<div class="navbar">
+    <a href="#">সর্বশেষ</a>
+    <a href="#">বাংলাদেশ</a>
+    <a href="#">নির্বাচন</a>
+    <a href="#">বিশ্ব</a>
+    <a href="#">খেলা</a>
+    <a href="#">বিনোদন</a>
+    <a href="#">চাকরি</a>
+    <a href="#">ভিডিও</a>
+</div>
+
+<!-- Big Ad -->
+<div class="banner">
+    Advertisement Banner
+</div>
+
+<!-- Content -->
+<div class="container">
+
+    <!-- Left Column -->
+    <div>
+        <div class="card">
+            <h3>এক বাড়িতে এত অস্ত্র পেল পুলিশ</h3>
+            <div class="thumb"></div>
+            <p>সংক্ষিপ্ত বর্ণনা এখানে থাকবে।</p>
+        </div>
+
+        <div class="card">
+            <h3>জাতীয় সংসদ নির্বাচন ২০২৬</h3>
+            <div class="thumb"></div>
+            <p>আরও খবর পড়ুন।</p>
+        </div>
+    </div>
+
+    <!-- Middle Column -->
+    <div>
+        <div class="card">
+            <h3>এক ব্যক্তির ‘পাশ’ দিচ্ছে ১০ হাজার নির্বাচন পর্যবেক্ষক</h3>
+            <div class="thumb" style="height:200px;"></div>
+            <p>মূল প্রতিবেদনের কিছু অংশ এখানে দেখা যাবে...</p>
+        </div>
+
+        <div class="card">
+            <h3>সাবেক প্রেসিডেন্টের সফর</h3>
+            <div class="thumb"></div>
+            <p>সংবাদ সারাংশ।</p>
+        </div>
+    </div>
+
+    <!-- Right Column -->
+    <div>
+        <div class="card">
+            <h3>Advertisement</h3>
+            <div class="thumb" style="height:250px;"></div>
+        </div>
+
+        <div class="card">
+            <h3>মতামত</h3>
+            <p>বিশেষ কলাম ও বিশ্লেষণ।</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer">
+    © 2026 News Portal
+</div>
+
+</body>
+</html>
